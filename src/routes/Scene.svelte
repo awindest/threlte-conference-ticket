@@ -9,7 +9,7 @@
 	import {
 		DEG2RAD,
 		RAD2DEG
-	} from 'three/src/math/MathUtils'
+	} from 'three/src/math/MathUtils.js'
 	import { spring } from 'svelte/motion'
 
 	let rotationY = 0
@@ -45,14 +45,23 @@
 	scale={$scale}
 >
 	<Text
-		text="Bill Indest"
+		text="Digital Ticket issued to:"
 		font="/Flama.otf"
-		fontSize={0.25}
-		position={[-0.8, -0.55, 0.04]}
+		fontSize={0.2}
+		position={[-0.8, -0.4, 0.04]}
 		maxWidth={1.5}
 	>
 		<T.MeshStandardMaterial envMapIntensity={11} />
 	</Text>
+	<Text
+	text="Bill Indest"
+	font="/Flama.otf"
+	fontSize={0.25}
+	position={[-0.8, -0.85, 0.04]}
+	maxWidth={1.5}
+>
+	<T.MeshStandardMaterial envMapIntensity={11} />
+</Text>
 
 	<Text
 		text="NO. 12345"
