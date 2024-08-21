@@ -9,6 +9,8 @@ I modified it a bit as a learning experience.
 pnpm create svelte@latest threlte-conference-ticket
 cd threlte-conference-ticket
 pnpm i
+pnpm i three @threlte/core @threlte/extras @types/three
+pnpm i -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 Note that the `glb` model was created with the following command:
